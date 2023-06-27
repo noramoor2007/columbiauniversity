@@ -1,5 +1,4 @@
 #include <iostream>
-
 std :: vector <int> sortNumsAscending (std :: vector <int> arr) {
   int temp = 0; /* This integer "temp" variable is a temporary variable. */
 	for (int i = 0; i < arr.size () - 1; i++) { /* If the initial value is less than the "arr.size ()" minus 1, then you have to move through the values one by one, incrementing through. */
