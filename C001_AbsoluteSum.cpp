@@ -1,4 +1,5 @@
 #include <iostream>
+// Take an array of integers (positive or negative or both) and return the sum of the absolute value of each element.
 int getAbsSum (std :: vector <int> arr) { /* A vector is a type of data structure. */
   int result = 0; /* Sum of all values will start at 0. This position is where you start in the for-loop. You do ".size ()" minus 1, and that gives you a number that is the same as the index of the last value in the array. */
   for (int i = 0; i < arr.size (); i++) {
