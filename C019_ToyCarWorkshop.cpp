@@ -11,3 +11,10 @@ int cars (int wheels, int bodies, int figures) { // This function takes three pa
 	}
 	return completeCars; // Once we no longer have enough resources to build a complete car, the loop terminates, and the final value of completeCars is returned. In other words, when you can no longer subtract 4, 1, and 2 from the three variables, it returns the "completeCars" number.
 }
+/*
+#include <iostream>
+using namespace std;
+int cars (int wheels, int bodies, int figures) {
+	return min (min (wheels / 4, bodies), figures / 2);
+}
+*/
