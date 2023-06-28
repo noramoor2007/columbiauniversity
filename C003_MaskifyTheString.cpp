@@ -1,23 +1,10 @@
-#include <iostream>
-#include <string>
-std::string maskify(std::string str) {
-	std::string str = std::to_string(num);
-	std::string result = ""; /*Create a string that is called new1, which will store the result.*/
-	//int stars = str[0:str.size()-5]; /* make another variable that is a string that is cal*/
-	//led stars and it is the value in the array that has an index of 0 to the string
-//	size, in this case 10-5, which gives you 5, the thing with index of 5 is 5.*/
-	if (str.size() >= 4) { /*if the strings size is greater than or equal to 
-	then ...If the string size is greater than or equal to four, then change the stars to stars*/ 
-		string result = (("#" * (str.size()-5))+1)+(str[str.size()-4:str.end()]);
-		//new1 + ("#" * (str.size()-5))+1; /*then in the new string you add the strin
-		//g size - 5 which is 6 hashtags*/
-		//new1 + str[str.size()-4:str.end()]; /*then you add the string value
-	//	at the string size minus 5*/
-		return result;
+// Usually when you sign up for an account to buy something, your credit card number, phone number or answer to a secret question is partially obscured in some way. Since someone could look over your shoulder, you don't want that shown on your screen. Hence, the website masks these strings. Your task is to create a function that takes a string, transforms all but the last four characters into "#" and returns the new masked string.
+std :: string maskify (std :: string str) { // Here we declare the function maskify that takes a string value stored in a string variable called "str", and returns a string.
+	std :: string hashtag = "#"; // Here we declare a new variable that is a string called "hashtag" that has a string value "#".
+	int startIndex = 0; // Declare an integer variable called "startIndex" that has a value of 0.
+	int endIndex = str.size () - 5; // This declares another integer variable called "endIndex" and it is equal to the string's ("str") size, which is the number of values, minus 5, and not 4, because the index starts at 0 so the end number for index is one less than the size. This gives the end index of the last value in the string before the last for digits that need to be shown in the entire string.
+	for (int i = startIndex; i <= endIndex; i++) { // This is a for-loop that defines integer "i" that is equal to the starting index of the entire string. Here we are already establishing some sort of substring that will pick out all the numbers except for the last for in the string. Then it says that this index value, “i”, is less than or equal to the end index value, which gives “i” a range, so “i” is now a number within in that range, however when it is not anymore the loop ends and we are able to return the newly revised string. However, let’s not get too ahead of ourselves. So before incrementing “i”, the number in the string with an index of “i” is now changed to the hashtag variable’s value in index 0, which is simply just the #. Now once that is performed, the loop repeats and 1 is added to “i”. It will keep repeating until it no longer can because it is going out of the range that was established for “i”. 
+		str [i] = hashtag [0]; //
 	}
-	else {
-		return "";
-	}
+	return str; // This return statement has to be outside of the for-loop because the for-loop has to keep running and not be interrupted because the return statement basically ends the loop after one iteration through it. This return statement will give the newly revised string.
 }
-
-string resu
