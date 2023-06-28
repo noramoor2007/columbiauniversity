@@ -1,3 +1,4 @@
+#include <iostream>
 // Usually when you sign up for an account to buy something, your credit card number, phone number or answer to a secret question is partially obscured in some way. Since someone could look over your shoulder, you don't want that shown on your screen. Hence, the website masks these strings. Your task is to create a function that takes a string, transforms all but the last four characters into "#" and returns the new masked string.
 std :: string maskify (std :: string str) { // Here we declare the function maskify that takes a string value stored in a string variable called "str", and returns a string.
 	std :: string hashtag = "#"; // Here we declare a new variable that is a string called "hashtag" that has a string value "#".
