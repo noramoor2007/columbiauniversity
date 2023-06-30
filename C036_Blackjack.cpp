@@ -36,3 +36,23 @@ bool overTwentyOne (std :: vector <char> cards) { // Here "cards" is a vector of
 	}
 	return checker;
 }
+/*
+bool overTwentyOne (std :: vector <char> cards) {
+	int totalval = 0;
+  for (char cardface : cards) {
+    if (cardface >= '2' && cardface <= '9') {
+      totalval += cardface - '0';
+    }
+		else if (cardface == 'A') {
+      totalval += 1;
+    }
+		else {
+      totalval += 10;
+    }
+		if (totalval > 21) {
+      return true;
+    }
+  }
+  return false;
+}
+*/
