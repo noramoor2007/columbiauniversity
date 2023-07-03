@@ -1,4 +1,6 @@
 #include <iostream>
+// The "#include <stdio.h>" allows us to use the "printf" and stuff.
+// The "#include <iostream>" allows us to use the "std :: cout" statements and stuff.
 // Write a C program that calculates the factorial of a given number using a function. The factorial of a number is the product of all positive integers less than or equal to that number. Define a function named "factorial" that takes an integer parameter "n" and returns the factorial of n. Implement the factorial caluclation using a loop inside the factorial function. Call the "factorial" function from the "main" function with a user-defined number. Print the result in the main function.
 // A class is a blueprint for defining objects in your code. An object is an instance of a class, a copy of your class. 
 int factorial (int n) {
