@@ -4,6 +4,7 @@
 int factorial (int n) {
   int factorial1 = 1; // This is the start of the function body.
   for (int i = 1; i <= n; i++) { // Factorial can work forwards and backwards. This calculates the factorial using a for-loop.
+    // for (int i = n; i >= 1; i--) {
     factorial1 *= i; // This is how factorial works and the loop will continue running until "i"is no longer less than or equal to "n".
   }
   return factorial1;
