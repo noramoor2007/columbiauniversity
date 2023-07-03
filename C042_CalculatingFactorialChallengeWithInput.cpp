@@ -15,7 +15,14 @@ int main () {
   int number;
   std :: cout << "Please input an integer: ";
   std :: cin >> number; // "cin" stands for character input, and this is basically asking the user for input and storing it into the "number" variable.
-  int result = factorial (number);
-  std :: cout << "Factorial of " << number << " is " << result << std :: endl;
+  if (number <= 0) {
+    std :: cout << "That is not an integer that the factorial can be taken of.";
+    // Whenever you are doing a "scanf", you must tell the code the integer data type.
+    return 0;
+  }
+  int result = factorial (number); // Setting result equal to the "factorial" method. Scanning this through the function, "factorial".
+  std :: cout << "Factorial of " << number << " is " << result << "." << std :: endl;
+  // You can do "printf ("Thee factorial  of %d is %d\n", number, fact);
+  // Using the ampersand, you are referring to something in the function that needs to be run in the function. Scan the function with the variable "number".
   return 0;
 }
