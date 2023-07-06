@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h> // These are the libraries.
 #include <stdlib.h>
 #include <time.h>
 // Suppose you're developing a music playlist feature for the Spotify app. You have an array of artist names representing the songs in a playlist: "Ice Spice", "Drake", "Taylor Swift", and "Justin Bieber". Write a C program that uses pointers, arrays, and functions to perform the following tasks. Display the artists' names using pointer arithmetic. Implement a function called "shufflePlaylist" that randomly shuffles the order of the artists' names. Call the "shufflePlaylist" function and display the shuffled playlist using pointers.
