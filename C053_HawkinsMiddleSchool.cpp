@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string>
 using namespace std;
+// You are tasked with creating a program to manage student information at Hawkins Middle School from the TV show Stranger Things. Each student has the following attributes: name, grade level, and a pointer to a structure representing their best friend. Your task is to implement the necessary functions to handle student data. Write a function called createStudent () that takes the name and grade level as arguments and returns a dynamically allocated Student structure with the given values. The bestFriend member should initially be set to NULL. Write a function called setBestFriend () that takes two Student pointers as arguments: student1 and student2. This function should set the bestFriend member of both students to point to each other. Write a function called displayStudent () that takes a Student pointer as an argument and displays the student's name, grade level, and the name of their best friend. If the best friend is not set (i.e., NULL), display "No best friend".
 struct Student {
   char name [50]; // This creates a name variable with a max of 50 characters.
   int gradelevel; // Th
