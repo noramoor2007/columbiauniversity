@@ -62,12 +62,10 @@ int main () {
   int randomIndex = rand () % numCharacters; // Picks a random character from the list.
   struct Character bestFriendData = characters [randomIndex];
   struct Student* bestFriend = createStudent (bestFriendData.name, bestFriendData.grade);
-  if (strcmp (bestFriendData.bestFriend, "Fake Best Friend") == 0) {
-    // If the best friend is a fake best friend, set the best friend of the student as NULL.
+  if (strcmp (bestFriendData.bestFriend, "Fake Best Friend") == 0) { // If the best friend is a fake best friend, set the best friend of the student as NULL.
     bestFriend->bestFriend = NULL;
   }
-  else {
-    // Find the index of the best friend in the characters array.
+  else { // Find the index of the best friend in the characters array.
     int bestFriendIndex = -1;
     for (int i = 0; i < numCharacters; i++) {
       if (strcmp (characters [i].name, bestFriendData.bestFriend) == 0) {
