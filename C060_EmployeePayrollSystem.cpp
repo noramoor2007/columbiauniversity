@@ -44,7 +44,7 @@ string generateEmail (string name){
 }
 string generatePosition (){
   int type = (rand () % 10); 
-  string positions [10] = {"Human resources manager", "Information technology manager", "Marketing manager", "Product manager", "Sales manager", "Administrative assistant", "Bookkeeper", "Business analyst", "Sales representative", "Software engineer"};
+  string positions [10] = {"Human Resources Manager", "Information Technology Manager", "Marketing Manager", "Product Manager", "Sales Manager", "Administrative Assistant", "Bookkeeper", "Business Analyst", "Sales Representative", "Software Engineer"};
   return positions [type];
 }
 int main () {
