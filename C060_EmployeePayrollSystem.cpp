@@ -83,7 +83,7 @@ int main () {
     cin >> rate;
     cout << "Did " << name << " recieve any \x1b[96mdeductions\x1b[0m? (\x1b[92mY\x1b[0m/\x1b[91mN\x1b[0m) ";
     cin >> deduct;
-    if(deduct == 'Y' || deduct == 'y'){ // There is a deduction.
+    if (deduct == 'Y' || deduct == 'y'){ // There is a deduction.
       cout << "How much was the deduction? $";
       cin >> deduction;
       while (deduction > rate) { // The deduction cannot be more than their hourly rate, it will ask the user to re-enter the amount.
@@ -110,7 +110,6 @@ int main () {
     phonenumbers = rand () % 100000000000; // This ensures that the length of the integer created is the length of a regular phone number.
     string email = generateEmail (employee.name);
     string position = generatePosition ();
-    
     cout << "\n| \x1b[4mEmployee\x1b[0m: " << employee.name << endl;
     cout << "| \x1b[4mPhone Number\x1b[0m: +1" << phonenumbers << endl;
     cout << "| \x1b[4mEmail\x1b[0m: " << email << endl;
