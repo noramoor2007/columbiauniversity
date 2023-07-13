@@ -4,6 +4,7 @@
 #include <list>
 #include <cstdlib>
 #include <ctime>
+// Create a program to manage employee payroll information. The system should enable users to input employee details, calculate salaries based on hours worked and hourly rates, store and display payroll records, and provide basic payroll calculations such as deductions and overtime.  Utilize concepts such as arrays, pointers, classes and objects, and functions/structures to organize and process employee payroll data.
 using namespace std;
 class Employee {
 public:
